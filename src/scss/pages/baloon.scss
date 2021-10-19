@@ -1,0 +1,79 @@
+.baloon-page {
+  text-align: center;
+  position: relative;
+}
+
+.balon {
+  background-color: dodgerblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: transform 300ms;
+  box-shadow: 2px 5px 15px black;
+}
+.balon_wrap {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.balon::after {
+  content: "";
+  width: 3px;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 2px 5px 15px black;
+}
+.balon::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 15px solid transparent;
+  position: absolute;
+  top: 100%;
+  border-bottom-color: dodgerblue;
+  transform: translateY(calc(-50% - 2px));
+  z-index: 4;
+  filter: drop-shadow(2px 5px 5px black);
+}
+
+.balon--drugi {
+  background-color: red;
+}
+
+.balon:nth-of-type(3) {
+  background-color: green;
+}
+
+.balon--drugi::before {
+  border-bottom-color: red;
+}
+
+.balon:nth-of-type(3)::before {
+  border-bottom-color: green;
+}
+
+.balon1-okvir {
+  position: absolute;
+  transition: transform 500ms;
+}
+.balon--prvi {
+  position: relative;
+}
+.balon2-okvir {
+  transition: transform 500ms;
+}

@@ -1,0 +1,18 @@
+.nav__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  li {
+    margin-right: 15px;
+  }
+}
+
+.navlink {
+  text-decoration: none;
+  color: rgb(21, 2, 126);
+  font-size: 32px;
+  font-weight: bold;
+}
+.navlink--active {
+  text-decoration: underline;
+}

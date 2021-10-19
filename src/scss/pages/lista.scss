@@ -1,0 +1,52 @@
+.wrapper {
+}
+
+.okvir {
+  height: 500px;
+  width: 300px;
+  // background-color: rgb(56, 141, 120);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.okvir > button {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5px;
+}
+.pravougaonik {
+  background-color: brown;
+  height: 0px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-weight: bold;
+  color: white;
+  animation: pojava 0.5s forwards;
+  overflow: hidden;
+}
+
+@keyframes pojava {
+  to {
+    height: 30px;
+  }
+}
+
+@keyframes brisanje {
+  from {
+    height: 30px;
+  }
+  to {
+    height: 0px;
+    margin: 0;
+  }
+}
+
+.pravougaonik--obrisan {
+  animation: brisanje 0.5s forwards;
+}

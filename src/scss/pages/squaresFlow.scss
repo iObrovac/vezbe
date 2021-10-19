@@ -1,0 +1,25 @@
+.squares-wrap {
+  position: relative;
+}
+
+.square {
+  border: 2px solid white;
+  box-sizing: border-box;
+  animation: squareRotation 1000ms linear infinite;
+}
+
+@keyframes squareRotation {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.square-base {
+  position: absolute;
+  animation: pomeraj 2s linear infinite;
+}
+@keyframes pomeraj {
+  to {
+    transform: translateX(calc(100vw + 40px * 3));
+  }
+}
