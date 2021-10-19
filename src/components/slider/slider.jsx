@@ -40,7 +40,7 @@ export default function Slider({ photos }) {
                 src={photo.src.large}
                 alt={`photographer: ${photo.photographer}`}
               />
-              <a href={photo.photographer_url} target="_blank">
+              <a href={photo.photographer_url} target="_blank" rel="noreferrer">
                 {photo.photographer}
               </a>
             </div>
